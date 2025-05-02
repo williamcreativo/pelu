@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #FDFBEE;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .titulo {
+    text-align: center;
+    color: #FE4F2D;
+  }
+
+  .subtitulo {
+    text-align: center;
+    color: grey;
+    font-weight: lighter;
+  }
+
+  .title-desktop{
+    display: none;
+  }
+
+  .subtitle-desktop{
+    display: none;
+  }
+  
+  form {
+    background: #FE4F2D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 80%;
+  }
+  
+  form label,
+  form fieldset {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    border: none;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: white;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button[type="submit"] {
+    color: #015551;
+    border: 2px solid #015551;
+    border-radius: 5px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FE4F2D;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  button[type="submit"]:hover {
+    box-shadow: inset 0 100px 0 0 #015551;
+    color: white;
+  }
+  
+  #listaMascotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card-mascota {
+    background-color: #FDFBEE;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .card-mascota img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  .card-mascota button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #FDFBEE;
+  }
+  
+  .card-mascota .btn-editar {
+    color: #015551;
+    border: 2px solid #015551;
+    border-radius: 5px;
+    padding: 14px 26px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FE4F2D;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    background-color: #FDFBEE;
+  }
+
+
+  .card-mascota .btn-editar:hover{
+    box-shadow: inset 0 100px 0 0 #015551;
+    color: white;
+  }
+
+  .card-mascota .btn-eliminar {
+    color: #57B4BA;
+    border: 2px solid #57B4BA;
+    border-radius: 5px;
+    padding: 14px 26px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FE4F2D;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    background-color: #FDFBEE;
+  }
+
+  .card-mascota .btn-eliminar:hover{
+    box-shadow: inset 0 100px 0 0 #57B4BA;
+    color: white;
+  }
+
+  @media (min-width: 1280px) {
+    .titulo{
+        display: none;
+    }
+    .subtitulo{
+        display: none;
+    }
+    body{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .form-wrapper{
+        width: 30%;
+    }
+
+    form {
+      width: 30%;
+      height: 100vh;
+      margin-left: 0;
+      margin-right: 0;
+      position: fixed;
+      border-top-left-radius: 0;
+    }
+
+    .content{
+        width: 60%;
+    }
+
+    .title-desktop{
+        display: block;
+        color: #FE4F2D;
+        text-align: center;
+    }
+
+    .subtitle-desktop{
+        display: block;
+        color: grey;
+        text-align: center;
+        font-weight: lighter;
+    } 
+
+
+  }
+  
